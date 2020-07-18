@@ -26,5 +26,16 @@
             <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" style="font-size:{{$currentFontSize}}{{$fontUnit}}; font-weight:{{$currentFontWeight}}">{{ $name }}({{$currentTagCount}})</a>
         {{ end }}
     </div>
+	<style>
+		#category-cloud {
+			margin-top: 1em;
+		}
+		#category-cloud a {
+			color: #666;
+		}
+		#category-cloud a:hover {
+			color: #000;
+		}
+	</style>
 {{ end }}
 {{ end }}
