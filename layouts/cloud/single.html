@@ -16,14 +16,15 @@
 
     <div id="category-cloud">
         {{ range $name, $taxonomy := $.Site.Taxonomies.categories }}
-            {{ $currentTagCount := len $taxonomy.Pages }}
-            {{ $currentFontSize := (add $smallestFontSize (mul (sub $currentTagCount $min) $fontStep) ) }}
-			{{ $currentFontSize := (add $smallestFontWeight (mul (sub $currentTagCount $min) $weightStep) ) }}
+            {{ $currentCategoryCount := len $taxonomy.Pages }}
+	    {{ $showCategoryCount := len $taxonomy.Pages }}
+            {{ $currentFontSize := (add $smallestFontSize (mul (sub $currentCategoryCount $min) $fontStep) ) }}
+			{{ $currentFontSize := (add $smallestFontWeight (mul (sub $currentCategoryCount $min) $weightStep) ) }}
             {{ $count := len $taxonomy.Pages }}
             {{ $fontW := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
             {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $fontW) ) }}
 			{{ $currentFontWeight := (add $smallestFontWeight (mul (sub $largestFontWeight $smallestFontWeight) $fontW) ) }}
-            <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" style="font-size:{{$currentFontSize}}{{$fontUnit}}; font-weight:{{$currentFontWeight}}">{{ $name }}({{$currentTagCount}})</a>
+            <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" style="font-size:{{$currentFontSize}}{{$fontUnit}}; font-weight:{{$currentFontWeight}}">{{ $name }}({{$showCategoryCount}})</a>
         {{ end }}
     </div>
 	<style>
