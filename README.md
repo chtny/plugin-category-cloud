@@ -1,11 +1,11 @@
 # plugin-category-cloud
-Adds a category cloud on your micro.blog's /categories/ page.
+Adds a category cloud to your micro.blog blog. Accessible at yourblog.com/cloud/
 
 Font size ranges from 17px to 25px.
 
 Font weight ranges from 400 to 700.
 
-Demo: [chaitanya.page/cloud/](https://chaitanya.page/cloud)
+Demo: [chaitanya.page/cloud/](https://chaitanya.page/cloud/)
 
 ## Style with custom.css
 The following css selectors can be modified according to your own needs:
