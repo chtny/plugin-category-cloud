@@ -16,3 +16,5 @@ The following css selectors can be modified according to your own needs:
 #category-cloud a:hover {
 }
 ```
+## Based Upon
+Came across [Artem Sidorenko's post about using a Hugo tagcloud](https://www.sidorenko.io/post/2017/07/nice-tagcloud-with-hugo/). Changed it a little bit for use on Micro.blog.
