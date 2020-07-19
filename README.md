@@ -7,6 +7,8 @@ Font weight ranges from 400 to 700.
 
 Demo: [chaitanya.page/categories/](https://chaitanya.page/categories/)
 
+***Disclaimer: Currently does not work with Lanyon and Minos theme.***
+
 ## Style with custom.css
 The following css selectors can be modified according to your own needs:
 ```
