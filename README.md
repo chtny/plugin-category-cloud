@@ -5,8 +5,6 @@ Font size ranges from 17px to 25px.
 
 Font weight ranges from 400 to 700.
 
-Demo: [chaitanya.page/categories/](https://chaitanya.page/categories/)
-
 ***Disclaimer: Currently does not work with Lanyon and Minos theme.***
 
 ## Style with custom.css
